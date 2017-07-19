@@ -1,0 +1,41 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "script",
+        "src": "./source/app.js"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "wsid": {
+        "title": "Website ID",
+        "placeholder": "0",
+        "type": "string",
+        "order": 0
+      },
+      "pid": {
+        "title": "Publisher ID",
+        "placeholder": "1234567",
+        "type": "string",
+        "order": 1
+      },
+      "site_status": {
+        "title": "Site Status",
+        "enum": [
+          "approved",
+          "unapproved"
+        ],
+        "enumNames": {
+          "approved": "Approved",
+          "unapproved": "Unapproved"
+        },
+        "default": "unapproved",
+        "readonly": true,
+        "type": "string",
+        "order": 2
+      }
+    }
+  }
+}
