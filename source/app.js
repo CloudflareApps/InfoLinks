@@ -5,6 +5,9 @@
 
   var options = INSTALL_OPTIONS
 
+  // Legacy behavior. HTTPS sites do in fact work.
+  if (window.location.protocol === 'https:') return
+
   if (options.site_status !== 'approved' || !options.pid || !options.wsid) return
 
   window.infolink_pid = options.pid
